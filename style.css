@@ -1,0 +1,68 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1c1c1c; /* Donkere achtergrondkleur */
+}
+
+.container {
+  text-align: center;
+  color: #FF69B4; /* Neon pink text */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px; /* Extra ruimte toegevoegd bovenaan de container */
+}
+
+.profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.profile h1 {
+  margin: 0;
+}
+
+.sub-text {
+  color: #d3d3d3; /* Lichtgrijze tekst */
+  margin: 0;
+}
+
+.links {
+  list-style: none;
+  padding: 0;
+}
+
+.links li {
+  margin-bottom: 10px;
+}
+
+.links li a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 15px 60px; /* Aangepaste breedte voor links en rechts */
+  background-color: #bc2499; /* Pink button background */
+  color: #FFFFFF; /* White text */
+  border-radius: 5px;
+  transition: background-color 0.2s ease, box-shadow 0.3s ease; /* Add transition effect */
+  box-shadow: 0 0 8px rgba(188, 36, 153, 0.8); /* Add glow effect */
+}
+
+.links li a:hover {
+  background-color: #e146b2; /* Lighter pink on hover */
+  box-shadow: 0 0 10px rgba(225, 70, 178, 0.8), 0 0 20px rgba(225, 70, 178, 0.6); /* Increase glow on hover */
+}
+
+/* Media query voor mobiele apparaten met een maximale schermbreedte van 600px */
+@media (max-width: 600px) {
+  .profile img {
+    width: 80px; /* Aangepaste breedte voor profielfoto op mobiel */
+    height: 80px; /* Aangepaste hoogte voor profielfoto op mobiel */
+    margin-bottom: 5px; /* Marge toegevoegd onder de profielfoto op mobiel */
+  }
+}
